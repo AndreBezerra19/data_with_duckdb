@@ -43,4 +43,4 @@ with DAG(
     )
 
     # Definindo a ordem de execução
-    task1 >> task2 >> task3
+    task1, task2 >> task3
