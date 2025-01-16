@@ -57,4 +57,19 @@ df_locations = pd.DataFrame(data)
 # Adiciona o nome da regiao de origem de cada pokemon
 df_locations["main_region"] = df_locations["generation"].apply(get_main_region)
 
+# Create DataFrame
+df_regions = pd.DataFrame(df_locations)
+
+# Create DuckDB database
+conn = duckdb.connect("poke_api_data.duckdb")
+conn.execute("""
+    CREATE TABLE IF NOT EXISTS regions ( 
+      id INT,
+      generation TEXT,
+      main_region TEXT
+    )
+""")
+conn.execute("""INSERT INTO regions SELECT * FROM df_regions""")
+conn.close()
+
 print(df_locations.head())
