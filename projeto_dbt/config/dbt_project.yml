@@ -1,7 +1,0 @@
-meu_projeto_dbt:
-  target: dev
-  outputs:
-    dev:
-      type: duckdb
-      path: "v2_database.duckdb"
-      schema: main
