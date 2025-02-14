@@ -87,3 +87,42 @@ Happy modeling!
 [0m21:47:10.668414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a46190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a5b410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10693e140>]}
 [0m21:47:10.668625 [debug] [MainThread]: Flushing usage events
 [0m21:47:14.445292 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:10:41.287813 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103c4f380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10583bb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10583bc50>]}
+
+
+============================== 22:10:41.290894 | b10677fc-63d4-476e-91d4-ebeff47bd4d1 ==============================
+[0m22:10:41.290894 [info ] [MainThread]: Running with dbt=1.9.2
+[0m22:10:41.291220 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/Users/andrebezerra/Desktop/Dev/data_with_duckdb/projeto_dbt/config', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m22:10:41.300654 [info ] [MainThread]: dbt version: 1.9.2
+[0m22:10:41.300883 [info ] [MainThread]: python version: 3.13.1
+[0m22:10:41.301023 [info ] [MainThread]: python path: /Users/andrebezerra/Desktop/Dev/venv/bin/python3.13
+[0m22:10:41.301153 [info ] [MainThread]: os info: macOS-15.3.1-arm64-arm-64bit-Mach-O
+[0m22:10:41.301286 [info ] [MainThread]: Using profiles dir at /Users/andrebezerra/Desktop/Dev/data_with_duckdb/projeto_dbt/config
+[0m22:10:41.301406 [info ] [MainThread]: Using profiles.yml file at /Users/andrebezerra/Desktop/Dev/data_with_duckdb/projeto_dbt/config/profiles.yml
+[0m22:10:41.301520 [info ] [MainThread]: Using dbt_project.yml file at /Users/andrebezerra/Desktop/Dev/data_with_duckdb/projeto_dbt/dbt_project.yml
+[0m22:10:41.301642 [info ] [MainThread]: Configuration:
+[0m22:10:41.301762 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m22:10:41.301875 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:10:41.301985 [info ] [MainThread]: Required dependencies:
+[0m22:10:41.302136 [debug] [MainThread]: Executing "git --help"
+[0m22:10:41.309850 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:10:41.310277 [debug] [MainThread]: STDERR: "b''"
+[0m22:10:41.310437 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:10:41.310592 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m22:10:41.310800 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m22:10:41.310930 [info ] [MainThread]: dbt looked for a profiles.yml file in /Users/andrebezerra/Desktop/Dev/data_with_duckdb/projeto_dbt/config/profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m22:10:41.311072 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/andrebezerra/Desktop/Dev/data_with_duckdb/projeto_dbt/dbt_project.yml> not found
+
+[0m22:10:41.312444 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.067262955, "process_in_blocks": "0", "process_kernel_time": 0.13407, "process_mem_max_rss": "97091584", "process_out_blocks": "0", "process_user_time": 0.605448}
+[0m22:10:41.312751 [debug] [MainThread]: Command `dbt debug` failed at 22:10:41.312690 after 0.07 seconds
+[0m22:10:41.313019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058e8fc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105885130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105726be0>]}
+[0m22:10:41.313239 [debug] [MainThread]: Flushing usage events
+[0m22:10:42.031904 [debug] [MainThread]: An error was encountered while trying to flush usage events
