@@ -1,0 +1,33 @@
+
+version: 2
+
+sources:
+  - name: pokemon_db
+    description: "Schema com dados brutos no DuckDB"
+    tables:
+      - name: b_pokemons
+        description: "Table with pokemons names"
+      - name: b_stats
+        description: "Table with stats info"
+      - name: b_types
+        description: "Table with IDs and types main and secondary"
+      - name: generations
+        description: "List os generations"
+
+models:
+  - name: silver_pokemons
+    description: "Silver table join pokemons and types"
+    columns:
+      - name: ID
+        description: "Primary key pokemons IDs"
+        data_tests:
+          - unique
+          - not_null
+      - name: NAME
+        description: "Pokemons names"
+      - name: MAIN_TYPE
+        description: "Pokemon main type"
+        data_tests:
+          - not_null
+      - name: SEC_TYPE
+        description: "Secondary pokemon type"
