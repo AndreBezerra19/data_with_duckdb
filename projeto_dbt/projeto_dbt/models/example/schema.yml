@@ -2,7 +2,7 @@
 version: 2
 
 sources:
-  - name: pokemon_db
+  - name: main
     description: "Schema com dados brutos no DuckDB"
     tables:
       - name: b_pokemons
