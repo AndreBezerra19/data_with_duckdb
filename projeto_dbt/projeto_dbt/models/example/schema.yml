@@ -15,7 +15,7 @@ sources:
         description: "List os generations"
 
 models:
-  - name: silver_pokemons
+  - name: s_pokemons
     description: "Silver table join pokemons and types"
     columns:
       - name: ID

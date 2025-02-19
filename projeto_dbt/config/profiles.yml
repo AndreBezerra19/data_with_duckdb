@@ -1,13 +1,14 @@
 projeto_dbt:
+  target: dev
   outputs:
     dev:
       type: duckdb
-      path: pokemon_db.duckdb
-      threads: 1
+      path: /Users/andrebezerra/Desktop/Dev/data_with_duckdb/v2_database.duckdb
+      schema: main
+      threads: 4
 
     prod:
       type: duckdb
-      path: pokemon_db.duckdb
+      path: /Users/andrebezerra/Desktop/Dev/data_with_duckdb/v2_database.duckdb
+      schema: main
       threads: 4
-
-  target: dev
