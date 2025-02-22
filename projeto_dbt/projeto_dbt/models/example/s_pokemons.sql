@@ -1,5 +1,5 @@
 
-{{ config(materialized='table') }}
+{{ config(materialized='table', schema='main') }}
 
 select 
     p.ID,
