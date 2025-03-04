@@ -1,8 +1,0 @@
-dbt_process:
-  target: dev
-  outputs:
-    dev:
-      type: duckdb
-      path: "/Users/andrebezerra/Desktop/Dev/data_with_duckdb/v2_database.duckdb"
-      schema: main  
-      threads: 4
